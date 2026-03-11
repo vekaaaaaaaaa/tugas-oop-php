@@ -4,6 +4,11 @@ class Mahasiswa
     private $nim, $nama, $matkul, $tgl_lahir;
     private $umur;
 
+    public function __construct()
+    {
+        $this ->status = "aktif";
+    }
+
     public function setData($nim, $nama, $matkul, $tgl_lahir)
     {
         $this->nim = $nim;
@@ -19,11 +24,12 @@ class Mahasiswa
     public function getData()
     {
         return [
-            $this->nim,
-            $this->nama,
-            $this->matkul,
-            $this->tgl_lahir,
-            $this->umur,
+          "nim" =>$this->nim,
+            "nama"=>$this->nama,
+            "matkul" =>$this->matkul,
+            "tgl_lahir" =>$this->tgl_lahir,
+            "umur" =>$this->umur,
+            "status" =>$this->status,
         ];
     }
 }

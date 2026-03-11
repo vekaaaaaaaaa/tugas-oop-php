@@ -14,7 +14,6 @@ $daftar_nilai = [
 
 $mahasiswa_1 = new MahasiswaTransfer($daftar_nilai);
 
-
 $matkul_1->setData("A11.12345","Pemrograman Berbasis Web");
 $matkul_2->setData("A11.12346","Pemrograman Web Lanjut");
 
